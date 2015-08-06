@@ -59,10 +59,10 @@ class Nanoshield_LCD: public Print {
      * 
      * Writes a character pre-specified with createChar().
      * 
-     * @param  The code of the character to write.
+     * @param  data The code of the character to write.
      * @return Always returns 1.
      */
-    virtual size_t write(uint8_t);
+    virtual size_t write(uint8_t data);
 
     /**
      * Set the cursor as visible.
