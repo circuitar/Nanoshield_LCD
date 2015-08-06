@@ -10,7 +10,9 @@ This is the Arduino library to access the LCD Nanoshield.
 Library features include:
 
 * Same functions avalable in the vanilla LCD library available in the Arduino IDE (LiquidCrystal)
+
 In addition:
+
 * Turns backlight on
 * Turns backlight off
 
@@ -20,9 +22,9 @@ The following examples_ are provided:
 
 * LCDTest_ shows the common usage of the library.
 
-.. _`LCD Nanoshield` https://www.circuitar.com.br/nanoshields/modulos/lcd/
-.. _examples https://github.com/circuitar/Nanoshield_LCD/tree/master/examples/
-.. _LCDTest https://github.com/circuitar/Nanoshield_LCD/blob/master/examples/LCDTest/LCDTest.ino
+.. _`LCD Nanoshield`: https://www.circuitar.com.br/nanoshields/modulos/lcd/
+.. _examples: https://github.com/circuitar/Nanoshield_LCD/tree/master/examples/
+.. _LCDTest: https://github.com/circuitar/Nanoshield_LCD/blob/master/examples/LCDTest/LCDTest.ino
 
 ---
 Copyright (c) 2013 Circuitar  
