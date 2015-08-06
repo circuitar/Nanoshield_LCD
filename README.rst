@@ -26,7 +26,8 @@ The following examples_ are provided:
 .. _examples: https://github.com/circuitar/Nanoshield_LCD/tree/master/examples/
 .. _LCDTest: https://github.com/circuitar/Nanoshield_LCD/blob/master/examples/LCDTest/LCDTest.ino
 
----
+----
+
 Copyright (c) 2013 Circuitar  
 All rights reserved.
 
