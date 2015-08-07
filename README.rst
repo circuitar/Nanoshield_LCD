@@ -22,7 +22,7 @@ The following examples_ are provided:
 
 * LCDTest_ shows the common usage of the library.
 
-.. _`LCD Nanoshield`: https://www.circuitar.com.br/nanoshields/modulos/lcd/
+.. _`LCD Nanoshield`: https://www.circuitar.com/nanoshields/modules/lcd/
 .. _examples: https://github.com/circuitar/Nanoshield_LCD/tree/master/examples/
 .. _LCDTest: https://github.com/circuitar/Nanoshield_LCD/blob/master/examples/LCDTest/LCDTest.ino
 .. _`LiquidCrystal`: https://www.arduino.cc/en/Reference/LiquidCrystal
