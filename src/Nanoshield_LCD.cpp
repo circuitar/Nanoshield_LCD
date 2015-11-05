@@ -121,12 +121,10 @@ void Nanoshield_LCD::home()
 void Nanoshield_LCD::setCursor(uint8_t col, uint8_t row)
 {
   // Get address in the first row
-  uint8_t addr = col & 0x0F;
+  uint8_t addr = col & 0x3F;
   
-  // Add offset if it's not the first row 
-  if (row == 1) {
-    addr += 0x40;
-  }
+  // Add row offset
+  addr += (row % 2 * 0x40) + (row / 2 * 20);
 
   // Set DDRAM address
   writeLcd8(addr | 0x80, false);
