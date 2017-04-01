@@ -230,3 +230,31 @@ void Nanoshield_LCD::createChar(uint8_t num, uint8_t data[])
     writeLcd8(data[i], true);
   }
 }
+
+void Nanoshield_LCD::printPadded(long l, int w, char pad, int base)
+{
+  // Use one digit for the negative sign, if needed
+  if (l < 0) {
+    w--;
+    print('-');
+    l = -l;
+  }
+
+  // Find how many times the number can be divided into the base
+  int n = 0;
+  long i = l / base;
+  while (i > 0) {
+    i /= base;
+    n++;
+  }
+
+  // Find how many digits to pad
+  n = w - n - 1;
+
+  // Add padding
+  while (n-- > 0) {
+    print(pad);
+  }
+
+  print(l, base);
+}

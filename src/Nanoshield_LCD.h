@@ -147,6 +147,16 @@ class Nanoshield_LCD: public Print {
      */
     void createChar(uint8_t, uint8_t[]);
 
+    /**
+     * Print a long integer, left padding it with spaces or zeroes.
+     *
+     * @param l The long integer to print.
+     * @param w Minimum width to print.
+     * @param pad Character to use for padding (default = ' ').
+     * @param base Number base to use when printing (default = DEC = 10).
+     */
+    void printPadded(long l, int w, char pad = ' ', int base = DEC);
+
   private:
     int8_t i2cAddress;
     uint8_t cursorMask;
